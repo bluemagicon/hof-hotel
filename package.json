@@ -1,0 +1,65 @@
+{
+  "name": "baw-base-theme",
+  "version": "0.0.1",
+  "description": "WordPress Base-Theme from braveandwray",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "npm run updateLinks",
+    "updateLinks": "node ./_update-dependencies.js"
+  },
+  "keywords": [
+    "braveandwray",
+    "baw",
+    "Theme",
+    "Wordpress"
+  ],
+  "author": "Fynn Schodde, brave and wray GmbH",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "chalk": "^2.4.2",
+    "gulp": "~4.0.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "~4.2.0",
+    "gulp-environment": "^1.5.1",
+    "gulp-imagemin": "~5.0.3",
+    "gulp-include": "^2.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "latest",
+    "hamburgers": "latest",
+    "hiraku": "latest",
+    "scrollreveal": "latest",
+    "swiper": "latest",
+    "uikit": "latest"
+  },
+  "browserslist": [
+    "Explorer >= 11",
+    "Safari >= 6",
+    "last 2 versions",
+    "> 1%"
+  ],
+  "gulp-environment": {
+    "environments": [
+      {
+        "name": "production",
+        "aliases": []
+      },
+      {
+        "name": "development",
+        "aliases": [
+          "dev",
+          "local"
+        ]
+      }
+    ],
+    "default": "production"
+  }
+}

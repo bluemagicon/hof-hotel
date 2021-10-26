@@ -1,0 +1,136 @@
+.header {
+    transform: translateY(0) !important;
+
+
+    &--sticky,
+    &--fixed {
+        z-index: 400;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    &--sticky {
+        position: sticky;
+    }
+
+    &--fixed {
+        position: fixed;
+
+    }
+
+    &--scrolled {
+
+        .header-inner {
+            //padding: 1.2em 0;
+        }
+    }
+
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+    // Inner Settings
+
+    &-inner {
+        box-shadow: $w-def-box-shadow;
+        font-family: map-get($w-fonts, secondary);
+        background: $w-color-white;
+        font-weight: 500;
+        padding: 1.75em 0;
+    }
+
+    &-container {
+        @extend .alignwide;
+        justify-content: space-between;
+        background: $w-color-white;
+        align-items: center;
+        display: flex;
+    }
+
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+    // Header Items / Elements
+
+    &-col {
+        display: flex;
+        align-items: center;
+    }
+
+
+    // -----------------------------------------------
+    // Items
+
+    &-item {
+        &:not(:first-child) {
+            margin-left: .75em;
+        }
+
+
+        // -----------------------------------------------
+        // Logo
+
+        &--logo {
+
+            img, svg {
+                transition: all .2s ease-in-out;
+                margin-bottom: -7px;
+                width: 110px;
+                display: block;
+                margin: 0 auto;
+
+                @media(min-width: $breakpoint-small) {
+                    width: 180px;
+                }
+
+                @media(min-width: $breakpoint-large) {
+                    width: 230px;
+                }
+            }
+
+            path, polygon {
+                fill: w-color(dark);
+                transition: all .2s ease-in-out;
+            }
+
+            &:hover {
+
+                path, polygon {
+                    fill: w-color(primary);
+                }
+            }
+        }
+
+
+        // -----------------------------------------------
+        // Navigation Wrapper
+
+        &--nav {
+
+            a {
+                font-weight: bold;
+            }
+
+            ul.sub-menu a {
+                font-weight: normal;
+            }
+
+            & + .header-item {
+                margin-left: 1.5em;
+            }
+            // mehr in _navigation.scss
+        }
+
+
+        // -----------------------------------------------
+        // Navigation Mobile
+
+        &--mobile {
+            a {
+                background: w-color(primary);
+                color: $w-color-white;
+                padding: 1em;
+            }
+        }
+    }
+}

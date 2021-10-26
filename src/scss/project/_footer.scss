@@ -1,0 +1,73 @@
+.footer {
+    @include w-block-padding-y();
+    box-shadow: $w-def-box-shadow;
+
+    //background: $w-color-dark;
+    //color: $w-color-white;
+
+    &-inner {
+        @extend .alignwide;
+    }
+
+    &-item {
+        margin: .75em 0;
+    }
+
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: $w-link-color-default;
+        }
+    }
+
+
+    // -------------------------------------------
+    // Links im Menü und im Adressblock
+
+    &-menu,
+    &-contact {
+
+        a:not(.w-btn) {
+            color: inherit;
+
+            &:hover {
+                //color: $w-link-color-default;
+            }
+        }
+    }
+
+
+    // -------------------------------------------
+    // Textbereich
+
+    &-text {
+        :first-child {
+            margin-top: 0;
+        }
+    }
+
+
+    // -------------------------------------------
+    // Social Media Box
+
+    &-social {
+        .social {
+            font-size: 1.2em;
+        }
+    }
+
+
+    // -------------------------------------------
+    // Social Media Box
+
+    &-menu {
+
+        ul {
+            @extend .w-list;
+            @extend .w-list--inline;
+            font-size: $w-font-size-small;
+        }
+    }
+}

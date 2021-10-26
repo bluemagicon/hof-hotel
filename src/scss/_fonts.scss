@@ -1,0 +1,74 @@
+// -----------------------------------------------
+// -----------------------------------------------
+// MAIN FONTS
+// font-display: swap;
+
+
+/*** Work Sans ***/
+/* work-sans-300 - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+  url('../fonts/work-sans-v9-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/work-sans-v9-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* work-sans-regular - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/work-sans-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/work-sans-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* work-sans-500 - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/work-sans-v9-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/work-sans-v9-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* work-sans-700 - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/work-sans-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/work-sans-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*** Beyond The Mountains ***/
+@font-face {
+  font-family: 'Beyond The Mountains';
+  src: url('../fonts/beyondthemountains.eot');
+  src: url('../fonts/beyondthemountains.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/beyondthemountains.woff2') format('woff2'),
+  url('../fonts/beyondthemountains.woff') format('woff'),
+  url('../fonts/beyondthemountains.ttf')  format('truetype'),
+  url('../fonts/beyondthemountains.svg#Beyond The Mountains') format('svg');
+}
+
+/*** BAUER BODONI REGULAR ***/
+@font-face {
+  font-family: 'Bauer Bodoni Regular';
+  src: url('../fonts/Bauer-Bodoni-Regular.eot');
+  src: url('../fonts/Bauer-Bodoni-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Bauer-Bodoni-Regular.woff2') format('woff2'),
+  url('../fonts/Bauer-Bodoni-Regular.woff') format('woff'),
+  url('../fonts/Bauer-Bodoni-Regular.svg#Bauer Bodoni') format('svg');
+}
+
+/*** BAUER BODONI Black ***/
+@font-face {
+  font-family: 'Bauer Bodoni Black';
+  src: url('../fonts/Bauer-Bodoni-Black.eot');
+  src: url('../fonts/Bauer-Bodoni-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Bauer-Bodoni-Black.woff2') format('woff2'),
+  url('../fonts/Bauer-Bodoni-Black.woff') format('woff'),
+  url('../fonts/Bauer-Bodoni-Black.svg#Bauer Bodoni') format('svg');
+}

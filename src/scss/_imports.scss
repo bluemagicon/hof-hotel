@@ -1,0 +1,95 @@
+// ####################################################################
+// ####################################################################
+// #######################  FRAMEWORK FILES  ##########################
+// ####################################################################
+// ####################################################################
+
+
+// ====================================================================
+// ====== SETTINGS, RESETS, MIXINS & CO
+// Default-Variablen, Standard-Mixins usw.
+
+@import 'framework/variables';
+@import 'framework/mixins';
+@import 'framework/resets';
+
+// ====================================================================
+// ====== CORE FILES
+// vom Editor unabhängige Stylings usw.
+
+@import 'framework/core/buttons';
+@import 'framework/core/contact';
+@import 'framework/core/forms';
+@import 'framework/core/images';
+@import 'framework/core/links';
+@import 'framework/core/lists';
+@import 'framework/core/typo';
+@import 'framework/core/navigation';
+@import 'framework/core/offcanvas';
+@import 'framework/core/social';
+
+// ====================================================================
+// ====== WORDPRESS: CORE
+// WordPress Standard-Templates
+
+@import 'framework/wordpress/core/filter';
+@import 'framework/wordpress/core/images';
+@import 'framework/wordpress/core/notfound';
+@import 'framework/wordpress/core/pagination';
+@import 'framework/wordpress/core/post';
+@import 'framework/wordpress/core/single';
+
+// ====================================================================
+// ====== WORDPRESS: GUTENBERG EDITOR
+// Anpassung von Standard-Gutenberg-Blöcken
+
+@import 'framework/wordpress/gutenberg/blocks';
+@import 'framework/wordpress/gutenberg/colors';
+@import 'framework/wordpress/gutenberg/cover';
+@import 'framework/wordpress/gutenberg/typo';
+@import 'framework/wordpress/gutenberg/images';
+@import 'framework/wordpress/gutenberg/list';
+
+// ====================================================================
+// ====== WORDPRESS: GHOSTKIT
+// Anpassung von Ghostkit-Blöcken, meinst nur via CSS-Variablen
+
+@import 'framework/wordpress/ghostkit/variables';
+@import 'framework/wordpress/ghostkit/accordion';
+@import 'framework/wordpress/ghostkit/button';
+@import 'framework/wordpress/ghostkit/grid';
+@import 'framework/wordpress/ghostkit/icon';
+@import 'framework/wordpress/ghostkit/pricing';
+@import 'framework/wordpress/ghostkit/progressbar';
+@import 'framework/wordpress/ghostkit/testimonial';
+@import 'framework/wordpress/ghostkit/counter';
+
+// WORDPRESS: GHOSTKIT PRO VERISON
+//@import 'framework/wordpress/ghostkit/pro-version/badges';
+
+// ====================================================================
+// ====== WORDPRESS: ANDERE PLUGINS
+// Standardisierte Overrides
+
+@import 'framework/wordpress/plugins/baw-connector';
+//@import 'framework/wordpress/plugins/visual-portfolio';
+//@import 'framework/wordpress/plugins/forminator';
+
+
+
+
+// ####################################################################
+// ####################################################################
+// ########################  PROJECT FILES  ###########################
+// ####################################################################
+// ####################################################################
+
+
+// ====================================================================
+// ====== Core
+
+@import 'project/footer';
+@import 'project/header';
+@import 'project/header-meta';
+
+@import 'project/custom';

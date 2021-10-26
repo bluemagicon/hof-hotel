@@ -1,0 +1,34 @@
+.header-meta {
+    //background: w-color(primary);
+    //color: $w-color-white;
+    border-bottom: $w-def-border;
+    background: $w-color-white;
+    position: relative;
+    text-align: right;
+    z-index: 10001;
+
+    &-inner {
+        @extend .alignwide;
+    }
+
+    .social {
+        margin-right: -1em;
+
+        a {
+            display: block;
+            padding: 1em;
+        }
+
+        li:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    a:not(.w-btn) {
+        //color: inherit;
+
+        &:hover {
+            //opacity: .75;
+        }
+    }
+}
